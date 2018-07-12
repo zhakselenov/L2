@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>L2</title>
+</head>
+<style>
+
+header{
+	height: 75px;
+	width: 900px;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+
+}	
+
+.link_style{
+	margin-right: 15px; 
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+.input_style{
+	margin-left: 75px;
+	margin-right: 30px;  
+	padding: 7px 10px;
+	border-radius: 5px;
+	border-color: #24292e;
+	background-color: grey;
+	border: none;
+}
+.input_style::placeholder{
+	color: white;
+}
+
+main{
+	background-image: url(https://github.com/images/modules/site/heroes/simple-codelines.svg);
+	background-color: #2b3137;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 550px;
+	align-items: center;
+	display: flex;
+}
+h1{
+	color: white;
+	margin: 70px 0;
+	font-size: 70px;
+	font-weight: 100;
+	margin-bottom: 10px;
+	line-height: 50px;
+}
+h2{
+	color: white;
+	margin-top: 0;
+	color: rgba(255,255,255,0.6);
+	font-weight: 100;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	font-family: Calibri;
+	margin: 0 0;
+}
+
+.main_text_style, .main_form{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 90%;
+}
+.main_form{
+	background-color: white;
+	width: 40%;
+	padding: 15px 15px;
+}
+
+.main_content{
+	display: flex; 
+	align-items: center; 
+	margin: 0 auto;
+    width: 900px;
+	height: 95%;
+
+}
+.form_input, .form_input_password{
+	margin-bottom: 15px;
+	padding: 7px 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	color: grey;
+
+}
+.form_input_password{
+	margin-bottom: 0;
+}
+
+.buttom_signin{
+	padding: 15px 15px;
+	border-radius: 5px;
+	background-color: #28a745;
+	color: white;
+	font-size: 16px;
+	border: none;
+}
+
+</style>
+
+<body>
+<div style="background-color: #24292e; ">
+<header>
+	<a class="link_style" href="https://github.com/"><svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a> 
+	<a class="link_style" href="">Features</a>
+	<a class="link_style" href="">Business</a>
+	<a class="link_style" href="">Explore</a>
+	<a class="link_style" href="">Marketplace</a>
+	<a class="link_style" href="">Pricing</a>
+	<input class="input_style" type="text" placeholder="Search GitHub">
+	<a style="font-weight: bold;" href="">Sign in</a><div style="margin: auto 10px; color: grey"> or </div><a style="font-weight: bold;" href="">Sign up</a>
+</header>
+</div>
+<main>
+	<div class="main_content">
+
+		<div class="main_text_style">
+			<h1>Built for developers</h1>
+			<h2>GitHub is a development platform inspired by the way you work. From <a style="font-weight: bold;" href="">open source</a> to <a style="font-weight: bold;" href="">business</a>, you can host and review code, manage projects, and build software alongside millions of other developers.</h2>
+		</div>
+
+		<div class="main_form">
+		<label for="ip_username">Username</label>
+		<input class="form_input" type="text" name="Username" id="ip_username">
+		
+		<label for="ip_email">Email</label>
+		<input class="form_input" type="email" name="Email" id="ip_email">
+
+		<label for="ip_pass">Password</label>
+		<input class="form_input_password" type="password" name="Password" id="ip_pass">
+		<div style="font-size: 12px; margin-bottom: 15px">Use at least one letter, one numeral, and seven characters.</div>
+
+		<button class="buttom_signin" type="submit">Sign up for GitHub</button>
+
+		</div>
+
+	</div>
+		
+
+
+
+
+</main>
+
+</body>
+
+
+</html>

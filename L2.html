@@ -3,110 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>L2</title>
+	<link rel="stylesheet" href="L2.css">
+	
 </head>
 <style>
-
-header{
-	height: 75px;
-	width: 900px;
-	display: flex;
-	margin: 0 auto;
-	align-items: center;
-
-}	
-
-.link_style{
-	margin-right: 15px; 
-}
-
-a{
-	text-decoration: none;
-	color: white;
-}
-.input_style{
-	margin-left: 75px;
-	margin-right: 30px;  
-	padding: 7px 10px;
-	border-radius: 5px;
-	border-color: #24292e;
-	background-color: grey;
-	border: none;
-}
-.input_style::placeholder{
-	color: white;
-}
-
-main{
-	background-image: url(https://github.com/images/modules/site/heroes/simple-codelines.svg);
-	background-color: #2b3137;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    height: 550px;
-	align-items: center;
-	display: flex;
-}
-h1{
-	color: white;
-	margin: 70px 0;
-	font-size: 70px;
-	font-weight: 100;
-	margin-bottom: 10px;
-	line-height: 50px;
-}
-h2{
-	color: white;
-	margin-top: 0;
-	color: rgba(255,255,255,0.6);
-	font-weight: 100;
-}
-body{
-	display: flex;
-	flex-direction: column;
-	font-family: Calibri;
-	margin: 0 0;
-}
-
-.main_text_style, .main_form{
-	display: flex;
-	flex-direction: column;
-	width: 60%;
-	height: 90%;
-}
-.main_form{
-	background-color: white;
-	width: 40%;
-	padding: 15px 15px;
-}
-
-.main_content{
-	display: flex; 
-	align-items: center; 
-	margin: 0 auto;
-    width: 900px;
-	height: 95%;
-
-}
-.form_input, .form_input_password{
-	margin-bottom: 15px;
-	padding: 7px 10px;
-	border-radius: 5px;
-	border: 1px solid grey;
-	color: grey;
-
-}
-.form_input_password{
-	margin-bottom: 0;
-}
-
-.buttom_signin{
-	padding: 15px 15px;
-	border-radius: 5px;
-	background-color: #28a745;
-	color: white;
-	font-size: 16px;
-	border: none;
-}
 
 </style>
 
@@ -131,28 +31,74 @@ body{
 			<h2>GitHub is a development platform inspired by the way you work. From <a style="font-weight: bold;" href="">open source</a> to <a style="font-weight: bold;" href="">business</a>, you can host and review code, manage projects, and build software alongside millions of other developers.</h2>
 		</div>
 
-		<div class="main_form">
-		<label for="ip_username">Username</label>
-		<input class="form_input" type="text" name="Username" id="ip_username">
+		<form class="main_form" method="post">
+			<label for="ip_username">Username</label>
+			<input class="form_input" type="text" name="Username" id="ip_username" placeholder="Pick a username">
 		
-		<label for="ip_email">Email</label>
-		<input class="form_input" type="email" name="Email" id="ip_email">
+			<label for="ip_email" >Email</label>
+			<input class="form_input" type="email" name="Email" id="ip_email" placeholder="you@example.com" required>
 
-		<label for="ip_pass">Password</label>
-		<input class="form_input_password" type="password" name="Password" id="ip_pass">
-		<div style="font-size: 12px; margin-bottom: 15px">Use at least one letter, one numeral, and seven characters.</div>
+			<label for="ip_pass">Password</label>
+			<input class="form_input_password" type="password" name="Password" id="ip_pass" placeholder="Create a password">
+			<div style="font-size: 14px; margin-bottom: 15px">Use at least one letter, one numeral, and seven characters.</div>
 
-		<button class="buttom_signin" type="submit">Sign up for GitHub</button>
+			<button class="buttom_signin" type="submit">Sign up for GitHub</button>
 
-		</div>
+			<div style="font-size: 14px; margin-bottom: 15px; text-align: center; ">By clicking “Sign up for GitHub”, you agree to our <a style="color: blue" href="">terms of service</a> and <a style="color: blue" href="">privacy statement</a>. We’ll occasionally send you account related emails.</div>
+		</form>
 
 	</div>
-		
-
-
-
-
 </main>
+
+<div>
+	
+	<label for="cb1">checkbox 1</label>
+	<input type="checkbox" id="cb1">
+
+	<label for="cb2">checkbox 2</label>
+	<input type="checkbox" id="cb2">
+
+	<label for="cb3">checkbox 3</label>
+	<input type="checkbox" id="cb3">
+
+	<label for="cb4">checkbox 4</label>
+	<input type="checkbox" id="cb4">
+
+</div>
+
+<div>
+	<form id="form_rb">
+	<label for="rb1" >RadioButton 1</label>
+	<input type="radio" id="rb1" name="rb1" value = "rb11">
+
+	<label for="rb2" >RadioButton 2</label>
+	<input type="radio" id="rb2" name="rb1" value = "rb2">
+
+	<label for="rb3" >RadioButton 3</label>
+	<input type="radio" id="rb3" name="rb1" value = "rb3">
+
+	<label for="rb4" >RadioButton 4</label>
+	<input type="radio" id="rb4" name="rb1" value = "rb4">
+
+	<button type="submit">echo</button>
+	</form>
+
+
+</div>
+
+<div>
+	
+	<select name="listboxsample">
+		<option value="m">male</option>
+		<option value="f">female</option>
+		<option value="i">it</option>
+	</select>
+
+
+	<textarea style="color: red">suka blyat</textarea>
+
+</div>
+
 
 </body>
 

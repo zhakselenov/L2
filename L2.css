@@ -1,0 +1,115 @@
+
+
+header{
+	height: 75px;
+	width: 900px;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+
+}	
+
+.link_style{
+	margin-right: 15px; 
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+.input_style{
+	margin-left: 75px;
+	margin-right: 30px;  
+	padding: 7px 10px;
+	border-radius: 5px;
+	border-color: #24292e;
+	background-color: grey;
+	border: none;
+}
+.input_style::placeholder{
+	color: white;
+}
+
+main{
+	background-image: url(https://github.com/images/modules/site/heroes/simple-codelines.svg);
+	background-color: #2b3137;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 550px;
+	align-items: center;
+	display: flex;
+}
+h1{
+	color: white;
+	margin: 70px 0;
+	font-size: 70px;
+	font-weight: 100;
+	margin-bottom: 10px;
+	line-height: 50px;
+}
+h2{
+	color: white;
+	margin-top: 0;
+	color: rgba(255,255,255,0.6);
+	font-weight: 100;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	font-family: Calibri;
+	margin: 0 0;
+}
+
+.main_text_style, .main_form{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 90%;
+}
+.main_form{
+	background-color: white;
+	width: 40%;
+	padding: 15px 15px;
+	height: auto;
+}
+
+.main_content{
+	display: flex; 
+	align-items: center; 
+	margin: 0 auto;
+    width: 900px;
+	height: 95%;
+
+}
+.form_input, .form_input_password{
+	margin-bottom: 15px;
+	padding: 15px 17px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	color: grey;
+	font-size: 15px;
+
+}
+.form_input_password{
+	margin-bottom: 0;
+}
+
+.buttom_signin{
+	padding: 15px 15px;
+	border-radius: 5px;
+	background-color: #28a745;
+	color: white;
+	font-size: 16px;
+	border: none;
+}
+
+
+/*===========================================*/
+
+#form_rb> label{
+color: red;
+font-size: 20px;
+
+
+}

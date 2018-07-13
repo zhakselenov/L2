@@ -17,6 +17,9 @@ a{
 	text-decoration: none;
 	color: white;
 }
+a:hover{
+	color: black;
+}
 .input_style{
 	margin-left: 75px;
 	margin-right: 30px;  
@@ -112,4 +115,24 @@ color: red;
 font-size: 20px;
 
 
+}
+
+
+.div_footer{
+	width: 150px;
+	margin: 15px 15px;
+	display: flex;
+	flex-direction: column;
+}
+footer{
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+}
+.a_footer{
+	color: grey; 
+	margin: 5px 0
+}
+.a_footer:hover{
+	color: black; 
 }
